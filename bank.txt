@@ -1,0 +1,57 @@
+       
+          Bank Server creation
+    _______________________________
+
+1. create a folder
+2. Generate package.json
+3. create index.json
+4. create .env
+5. install packages
+   a.express
+   b.cors
+   c.dotenv
+6.create .gitignore
+7. update package.json file script tag with :  "start: (node fileName) "
+8.Start creatig expres server in index file
+   -import dotenv file
+   -import express
+   -import cors
+   -create express server
+   -setup portnumber for server
+   -use cors, json parser in server application
+   -run the server app in specified portnumber
+
+9.create database and collection:  database in mongodb atlas,copy the connection string
+10.paste collection string to connect node app with mongodb application
+11.define steps to connect node app with mongodb database . 
+     -create db folder, define db connection,create connection.js
+     -install mongoose, import mongoose to connection.js
+     -get connection string to connection.js :process.env
+     -connect node with mongodb using mongoose
+     -import connection.js in index.js
+     -
+12. Define schema for model/collection in db 
+         -create model folder ,create userSchema.js
+         -import mongoose in userSchema file .
+         -create schema using mongoose
+         -create model/collection to store documents  as per schema
+         -export model
+         -
+13.To define logic to resolve http request
+
+      - Create a controller folder inside server folder , create a controller js file inside this folder
+      - Import model inside controller file
+      - Define logic to resolve different http client request, and export it 
+
+14. create routes to resolve client requests
+ 
+    -create routes folder in server folder,to define routes create router.js
+    -in router.js 
+
+       -import express.js 
+       -create routes, using express.Router
+       -export router, 
+             
+   - import router in index file
+   - use router in server app 
+      
